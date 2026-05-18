@@ -50,4 +50,4 @@ Unlike conventional PHP/MySQL applications that store image files in local devic
    - Sign up a fresh new account and start uploading! 
 
 ---
-*Created as a semester project for AD Lab.*
+

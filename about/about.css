@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #000;
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: orange;
+}
+
+.nav-auth {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.nav-auth .action_btn {
+  padding: 0.45rem 0.9rem;
+}
+
+
+.nav-links a {
+  margin: 0 15px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.nav-links .active {
+  color: #f5b000;
+}
+
+.nav-auth .btn {
+  margin-left: 15px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.signup {
+  background: #f5b000;
+  color: #000;
+}
+
+.login {
+  background: #f5b000;
+  color: #000;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 140px 20px 80px;
+}
+
+.hero h1 {
+  font-size: 52px;
+}
+
+.hero span {
+  color: #f5b000;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 30px auto;
+  color: #bbb;
+  font-size: 18px;
+}
+
+/* TECH */
+.tech {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.tech h2 {
+  font-size: 40px;
+}
+
+.tech span {
+  color: #f5b000;
+}
+
+.tech-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.tech-card {
+  background: rgba(255,255,255,0.05);
+  padding: 30px;
+  border-radius: 20px;
+  width: 260px;
+}
+
+/* TEAM */
+.team {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 40px;
+}
+
+.team span {
+  color: #f5b000;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 900px;
+  margin: 50px auto 0;
+}
+
+.team-card {
+  background: rgba(255,255,255,0.06);
+  padding: 25px;
+  border-radius: 18px;
+}
+
+/* CONTACT */
+.contact {
+  background: #000;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contact h2 {
+  font-size: 36px;
+}
+
+.contact span {
+  color: #f5b000;
+}
+
+.contact-box {
+  margin-top: 30px;
+  color: #bbb;
+}
+
+.footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #666;
+}
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+/* Tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 20px 40px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .tech h2,
+  .team h2 {
+    font-size: 34px;
+  }
+
+  .tech-cards {
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-auth {
+    display: flex;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 100px 15px 60px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .tech {
+    padding: 60px 20px;
+  }
+
+  .tech-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team {
+    padding: 60px 20px;
+  }
+}
+
+/* Small Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 18px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .tech h2,
+  .team h2,
+  .contact h2 {
+    font-size: 28px;
+  }
+
+  .tech-card,
+  .team-card {
+    width: 100%;
+  }
+}

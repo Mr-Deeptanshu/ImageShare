@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: radial-gradient(circle at top, #1a1a1a, #0b0b0b);
+    height: 100vh;
+    margin: 0;
+    color: #cfcfcf;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card{
+    background: #141414;
+    width: 360px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.7);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.logo{
+    text-align: center;
+    color: #f4b400;
+    font-size: 28px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+h3{
+    text-align: center;
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+.subtitle{
+    text-align: center;
+    color: #b0b0b0;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+label{
+    font-size: 13px;
+    font-weight: bold;
+    color: #d0d0d0;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 15px 0;
+    border-radius: 8px;
+    border: 1px solid #2a2a2a;
+    background: #0b0b0b;
+    color: #ffffff;
+}
+
+input:focus{
+    outline: none;
+    border-color: #f4b400;
+    box-shadow: 0 0 0 0.15rem rgba(244,180,0,0.25);
+}
+
+::placeholder{
+    color: #bdbdbd;
+    opacity: 1;
+}
+
+.password-box{
+    position: relative;
+}
+
+.password-box span{
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    cursor: pointer;
+    color: #f4b400;
+    font-size: 13px;
+}
+
+.password-box span:hover{
+    color: #ffcc33;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    background: #f4b400;
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #ffcc33;
+}
+
+.bottom-text{
+    text-align: center;
+    font-size: 13px;
+    margin-top: 15px;
+    color: #b0b0b0;
+}
+
+.bottom-text a{
+    color: #f4b400;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bottom-text a:hover{
+    color: #ffcc33;
+}

@@ -1,0 +1,91 @@
+body{
+    background: radial-gradient(circle at top, #1a1a1a, #0b0b0b);
+    color: #cfcfcf;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.card{
+    background: rgba(20,20,20,0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.7);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.logo{
+    font-size: 32px;
+    font-weight: bold;
+    color: #f4b400;
+}
+
+h4{
+    color: #ffffff;
+}
+
+.form-label{
+    color: #d0d0d0;
+}
+
+.form-control{
+    background-color: #0b0b0b;
+    border: 1px solid #2a2a2a;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator{
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.form-control:focus{
+    background-color: #0b0b0b;
+    border-color: #f4b400;
+    box-shadow: 0 0 0 0.15rem rgba(244,180,0,0.25);
+    color: #ffffff;
+}
+
+.text-muted{
+    color: #b0b0b0 !important;
+}
+
+small{
+    color: #b8b8b8;
+}
+
+.btn-gold{
+    background-color: #f4b400;
+    color: #000;
+    font-weight: 600;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.btn-gold:hover{
+    background-color: #ffcc33;
+}
+
+.btn-outline-dark{
+    border-color: #444;
+    color: #cfcfcf;
+    border-radius: 25px;
+}
+
+.btn-outline-dark:hover{
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+#togglePassword{
+    background-color: #141414;
+    color: #cfcfcf;
+    border-color: #2a2a2a;
+}
+
+a{
+    color: #f4b400;
+}
+
+a:hover{
+    color: #ffcc33;
+}
